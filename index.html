@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vastu Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Vastu Calculator</h2>
+
+        <div class="input-group">
+            <label for="aa">Min Length:</label>
+            <input type="number" id="aa" min="1" value="1" placeholder="Feet">
+            <input type="number" id="bb" min="0" max="11" value="0" placeholder="Inches">
+        </div>
+
+        <div class="input-group">
+            <label for="cc">Max Length:</label>
+            <input type="number" id="cc" min="1" value="1" placeholder="Feet">
+            <input type="number" id="dd" min="0" max="11" value="0" placeholder="Inches">
+        </div>
+
+        <div class="input-group">
+            <label for="vv">Min Breadth:</label>
+            <input type="number" id="vv" min="1" value="1" placeholder="Feet">
+            <input type="number" id="xx" min="0" max="11" value="0" placeholder="Inches">
+        </div>
+
+        <div class="input-group">
+            <label for="yy">Max Breadth:</label>
+            <input type="number" id="yy" min="1" value="1" placeholder="Feet">
+            <input type="number" id="zz" min="0" max="11" value="0" placeholder="Inches">
+        </div>
+
+        <div class="input-group">
+            <label for="oo">Nakshatram (1-27):</label>
+            <input type="number" id="oo" min="1" max="27" placeholder="Nakshatram">
+        </div>
+
+        <div class="checkbox-group">
+            <label>Custom Variables:</label>
+            <div class="checkbox-list">
+                <label><input type="checkbox" id="nak"> Nak</label>
+                <label><input type="checkbox" id="aysh"> Aysh</label>
+                <label><input type="checkbox" id="adym"> Adym</label>
+                <label><input type="checkbox" id="karch"> Karch</label>
+                <label><input type="checkbox" id="aym"> Aym</label>
+                <label><input type="checkbox" id="vrm"> Vrm</label>
+                <label><input type="checkbox" id="tidhi"> Tidhi</label>
+                <label><input type="checkbox" id="dikpth"> Dikpth</label>
+                <label><input type="checkbox" id="amsa"> Amsa</label>
+                <label><input type="checkbox" id="ygm"> Ygm</label>
+                <label><input type="checkbox" id="karnm"> Karnm</label>
+                <label><input type="checkbox" id="thvm"> Thvm</label>
+                <label><input type="checkbox" id="kulm"> Kulm</label>
+                <label><input type="checkbox" id="lagnam"> Lagnam</label>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="clearFields()">Clear</button>
+        </div>
+
+        <div id="output-container">
+            <table id="output-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Dimensions</th>
+                        <th>Area (sq.ft)</th>
+                        <th>Nak</th>
+                        <th>Aysh</th>
+                        <th>Adym</th>
+                        <th>Karch</th>
+                        <th>Aym</th>
+                        <th>Vrm</th>
+                        <th>Tidhi</th>
+                        <th>Dikpth</th>
+                        <th>Amsa</th>
+                        <th>Ygm</th>
+                        <th>Karnm</th>
+                        <th>Thvm</th>
+                        <th>Kulm</th>
+                        <th>Lagnam</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
